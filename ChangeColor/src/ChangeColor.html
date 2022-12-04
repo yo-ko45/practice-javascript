@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ChangeColor</title>
+        <script src="ChangeColor.js"></script>
+    </head>
+
+    <body>
+        <p>スライダーバーで色を変更する</p>
+
+        <div>
+            <label><input type="range" min="1" max="255" step="1" id="volumeSlider_R">R:</label>
+            <span id="sliderValueR"></span>
+        </div>
+        <div>
+            <label><input type="range" min="1" max="255" step="1" id="volumeSlider_G">G</label>
+            <span id="sliderValueG"></span>
+        </div>
+        <div>
+            <label><input type="range" min="1" max="255" step="1" id="volumeSlider_B">B</label>
+            <span id="sliderValueB"></span>
+        </div>
+
+        <input type="button" id="Output" value="色決定" onclick="SliderOutput(volumeSlider_R.value,volumeSlider_G.value,volumeSlider_B.value)">
+    </body>
+
+
+</html>
